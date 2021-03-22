@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Aprobaste?</title>
+</head>
+<body>
+<main>
+<h1>¿Aprobaste?</h1>
+  <form action="javascript:procesa();">
+   <p>
+    <input id="inpCalificación" type="number" placeholder="Calificación"min="0" max="10" required>
+  </p>
+  <p><button id="submit">Procesa</button></p>
+  </form>
+    <script>
+      function procesa() {
+       const calificación = inpCalificación.valueAsNumber;
+        if (calificación >= 8) {
+         alert("Aprobado.");
+       }
+        alert("Adios.");
+      }
+</script>
+</main>
+<footer>Copyright </footer>
+</body>
+</html>
